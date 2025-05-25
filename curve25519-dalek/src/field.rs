@@ -98,7 +98,7 @@ impl FieldElement {
     /// # Return
     ///
     /// If negative, return `Choice(1)`.  Otherwise, return `Choice(0)`.
-    pub(crate) fn is_negative(&self) -> Choice {
+    pub fn is_negative(&self) -> Choice {
         let bytes = self.as_bytes();
         (bytes[0] & 1).into()
     }

@@ -245,7 +245,7 @@ pub static ED25519_BASEPOINT_TABLE: &'static EdwardsBasepointTable =
 
 /// Inner constant, used to avoid filling the docs with precomputed points.
 #[doc(hidden)]
-#[cfg(feature = "precomputed-tables")]
+#[cuda_std::address_space(global)]
 static ED25519_BASEPOINT_TABLE_INNER_DOC_HIDDEN: EdwardsBasepointTable = EdwardsBasepointTable([
     LookupTable([
         AffineNielsPoint {
