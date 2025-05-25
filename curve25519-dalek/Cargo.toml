@@ -54,7 +54,7 @@ digest = { version = "0.10", default-features = false, optional = true }
 subtle = { version = "2.6.0", default-features = false, features = ["const-generics"]}
 serde = { version = "1.0", default-features = false, optional = true, features = ["derive"] }
 zeroize = { version = "1", default-features = false, optional = true }
-cuda_std = { git = "https://github.com/LegNeato/Rust-CUDA.git", rev = "3b3e0497227c913cadf54310f18e4eda8b10f5e3", optional = true }
+cuda_std = { git = "https://github.com/Rust-GPU/Rust-CUDA.git", optional = true }
 
 [target.'cfg(target_arch = "x86_64")'.dependencies]
 cpufeatures = "0.2.17"
