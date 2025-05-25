@@ -66,7 +66,7 @@ fiat-crypto = { version = "0.2.1", default-features = false }
 default = ["alloc", "precomputed-tables", "zeroize"]
 alloc = ["zeroize?/alloc"]
 precomputed-tables = []
-cuda = ["cuda_std"]
+cuda = ["dep:cuda_std"]
 legacy_compatibility = []
 group = ["dep:group", "rand_core"]
 group-bits = ["group", "ff/bits"]
